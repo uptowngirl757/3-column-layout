@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 $orange: hsl(31, 77%, 52%);
 $cyan: hsl(184, 100%, 22%);
 $dark-cyan: hsl(179, 100%, 13%);
@@ -33,9 +33,9 @@ body {
   }
   &__type {
     padding: 1rem 0;
-    // border: 3px solid red;
-    font-weight: 500;
-    font-size: 2rem;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
     color: hsl(0, 0%, 95%);
   }
   &__info {
