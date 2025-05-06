@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.cars {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.car {
+  padding: 2.7rem 3.1rem;
+  flex: 1 1 33%;
+}
+.car__img {
+  margin: 1rem 0;
+  display: inline-block;
+}
+.car__type {
+  padding: 1rem 0;
+  font-weight: 500;
+  font-size: 2rem;
+  color: hsl(0, 0%, 95%);
+}
+.car__info {
+  margin-block: 2rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+.car__btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1.2rem;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+}
+.car__btn:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+.car__btn--orange {
+  color: hsl(31, 77%, 52%);
+}
+.car__btn--cyan {
+  color: hsl(184, 100%, 22%);
+}
+.car__btn--dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
+.car--orange {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.car--cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.car--dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+@media all and (max-width: 835px) {
+  .cars {
+    margin: 3rem 0;
+    flex-wrap: wrap;
+  }
+  .car {
+    flex-basis: 100%;
+  }
+  .car--orange {
+    border-radius: 10px 10px 0 0;
+  }
+  .car--dark-cyan {
+    border-radius: 0 0 10px 10px;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$dark-cyan: hsl(179, 100%, 13%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+.cars {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+}
+.car {
+  padding: 2.7rem 3.1rem;
+  flex: 1 1 33%;
+  &__img {
+    margin: 1rem 0;
+    // border: 4px solid pink;
+    display: inline-block;
+  }
+  &__type {
+    padding: 1rem 0;
+    // border: 3px solid red;
+    font-weight: 500;
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+  }
+  &__info {
+    margin-block: 2rem;
+    // border: 3px solid black;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    font-size: 0.8rem;
+  }
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1.2rem;
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.7rem 1.2rem;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid hsl(0, 0%, 95%);
+      color: hsl(0, 0%, 95%);
+    }
+
+    &--orange {
+      color: $orange;
+    }
+    &--cyan {
+      color: $cyan;
+    }
+    &--dark-cyan {
+      color: $dark-cyan;
+    }
+  }
+  &--orange {
+    background-color: $orange;
+    border-radius: 10px 0 0 10px;
+  }
+  &--cyan {
+    background-color: $cyan;
+  }
+  &--dark-cyan {
+    background-color: $dark-cyan;
+    border-radius: 0 10px 10px 0;
+  }
+}
+@media all and (max-width: 835px) {
+  .cars {
+    margin: 3rem 0;
+    flex-wrap: wrap;
+  }
+  .car {
+    flex-basis: 100%;
+    &--orange {
+      border-radius: 10px 10px 0 0;
+    }
+    &--dark-cyan {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}
