@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/uptowngirl757/3-column-layout](https://github.com/uptowngirl757/3-column-layout)
+- Live Site URL: [https://uptowngirl757.github.io/3-column-layout/](https://uptowngirl757.github.io/3-column-layout/)
 
 ## My process
 
@@ -56,4 +56,4 @@ I need to further study the `flex` property.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/uptowngirl757)
+- Frontend Mentor - [@uptowngirl757](https://www.frontendmentor.io/profile/uptowngirl757)
